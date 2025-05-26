@@ -13,6 +13,7 @@ import {
   IonLabel,
   IonInput,
   IonTextarea,
+  IonIcon,
   IonSegment,
   IonSegmentButton,
 } from '@ionic/angular/standalone';
@@ -38,6 +39,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
     IonLabel,
     IonInput,
     IonTextarea,
+    IonIcon,
     IonSegment,
     IonSegmentButton,
     ExploreContainerComponent,

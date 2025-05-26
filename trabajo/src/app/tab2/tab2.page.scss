@@ -80,5 +80,24 @@ ion-item.input-verde {
     max-width: 370px;        /* opcional, máximo ancho */
   }
   
+  .buscador-degradado {
+    --background: transparent;
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* Fondo degradado visible */
+    border-radius: 8px;
+    margin-top: 10px;
+    height: 38px;
+    font-size: 14px;
+    padding: 0 10px;
+    align-items: center;
+  }
+  
+  .buscador-degradado ion-input {
+    --color: black; /* color del texto ingresado */
+  }
+  
+  .buscador-degradado input::placeholder {
+    color: black !important; /* placeholder en negro */
+  }
+  
   
   

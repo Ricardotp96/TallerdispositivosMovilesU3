@@ -16,7 +16,7 @@
 
   <!-- ✅ HTML personalizado aquí -->
   <div class="portada-container">
-    <!-- Logo -->
+    
     
 
     <div class="header-flex">
@@ -29,7 +29,14 @@
         <div>Depto. Informatica</div>
       </div>
     </div>
+
+    <!-- Buscador sin funcionalidad -->
+<ion-item class="buscador-degradado">
+  <ion-icon name="search" slot="start"></ion-icon>
+  <ion-input placeholder="Buscar..."></ion-input>
+</ion-item>
     
+
 
     <!-- Menú horizontal -->
   <ion-segment value="crear" (ionChange)="segmentChanged($event)">
