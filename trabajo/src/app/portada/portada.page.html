@@ -1,0 +1,66 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="portada-bg">  <!-- Aquí va el fondo degradado -->
+
+    <div class="portada-container">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="assets/imgs/fondo1.png" alt="Logo Municipalidad San Pedro de la Paz" />
+      </div>
+
+      <!-- Título -->
+      <h2 class="titulo">SISTEMA DE SOPORTE</h2>
+      <p class="descripcion">
+        Para crear solicitudes de servicio técnico, inicie sesión con sus datos de usuario.
+      </p>
+
+      <!-- Campo Usuario -->
+      <ion-item lines="none" class="input-item degradado-azul">
+        <ion-icon name="person-circle" slot="start" class="icono-input"></ion-icon>
+        <ion-input
+          placeholder="USUARIO"
+          type="text"
+          
+          autocomplete="username"
+          required
+          aria-label="Usuario"
+        ></ion-input>
+      </ion-item>
+
+      <!-- Campo Contraseña -->
+      <ion-item lines="none" class="input-item degradado-azul">
+        <ion-icon name="key" slot="start" class="icono-input"></ion-icon>
+        <ion-input
+          placeholder="PASSWORD"
+          
+          
+          autocomplete="current-password"
+          required
+          aria-label="Contraseña"
+        ></ion-input>
+      </ion-item>
+
+      <!-- Botón de inicio de sesión -->
+      <ion-button
+        expand="block"
+        color="primary"
+        shape="round"
+        class="boton-login"
+        
+        
+      >
+        INICIAR SESIÓN
+      </ion-button>
+
+      <!-- Enlace para recuperar clave -->
+      <div class="recuperar-clave">
+        <p>Recuperar Clave</p>
+      </div>
+
+      <!-- Pie de página -->
+      <div class="footer-text">
+        Departamento de Informática.
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,105 @@
+.portada-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #09e0a0, #283e51);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portada-container {
+    width: 100%;
+  max-width: 400px;
+  padding: 10px 20px 20px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 100vh;
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto */
+  }
+  
+  .logo-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Menor espacio arriba y abajo */
+  
+  img {
+    max-width: 250px; // Ajusta según necesites
+    height: auto;
+  }
+  }
+  
+  .titulo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .descripcion {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-size: 0.95rem;
+  }
+  
+  .input-item {
+    margin: 0 auto 15px auto; /* centrado automático */
+  width: 80%;
+  max-width: 350px;
+  background: white;
+  border-radius: 10px;
+   
+  }
+  
+  .icono-input {
+    color: #3880ff;
+    
+  }
+  
+  .boton-login {
+      
+    margin: 10px auto 0 auto; /* centrado automático */
+  width: 80%;
+  max-width: 350px;
+    
+  }
+  
+  .recuperar-clave {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .footer-text {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.85rem;
+    color: #ffffffb3;
+  }
+  
+  
+  .degradado-azul {
+    background: linear-gradient(135deg, #b2caf0, #60a5fa); /* azul degradado */
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+  
+    --background: transparent; /* evita conflictos */
+  }
+  
+  .degradado-azul ion-input {
+    color: white; /* texto en blanco */
+    --padding-start: 8px;
+    --placeholder-color: #e0f0ff;
+  }
+  
+  .degradado-azul ion-icon {
+    color: white;
+  }
+
+  
+  

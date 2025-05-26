@@ -1,0 +1,70 @@
+.logo-container img {
+    width: 150px; /* O ajusta según lo que necesites */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .portada-container {
+    background: linear-gradient(to bottom, #09e0a0, #283e51);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 200px; /* o el alto que quieras */
+    box-sizing: border-box;
+  }
+  /* Estilo para ion-item que contiene el input y label */
+ion-item.input-verde {
+    --background: linear-gradient(to bottom, #08b883, #283e51); /* fondo degradado */
+    --background-focused: linear-gradient(to bottom, #4CAF50, #087f23); /* cuando esté enfocado */
+    --background-hover: linear-gradient(to bottom, #4CAF50, #087f23); /* cuando pase mouse */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: white; /* texto en blanco */
+  }
+  
+  /* Opcional: color del texto dentro del input */
+  ion-item.input-verde ion-input, 
+  ion-item.input-verde ion-label {
+    color: white;
+  }
+  
+  /* Para que el placeholder y texto ingresado también tengan color claro */
+  ion-item.input-verde ion-input input {
+    color: white;
+  }
+  .botones-container {
+    display: flex;
+    gap: 10px;         /* espacio entre botones */
+    margin-top: 1rem;  /* margen superior */
+  }
+  
+  .botones-container ion-button {
+    flex: 1;           /* los botones ocupan el mismo ancho */
+  }
+  
+  .header-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espacio entre logo y texto */
+  }
+  
+  .logo-container img {
+    width: 120px; /* o el tamaño que quieras para el logo */
+    height: auto;
+  }
+  
+  .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; /* o el color que prefieras */
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .titulo-crear {
+    font-size: 22px;
+  }
+  
