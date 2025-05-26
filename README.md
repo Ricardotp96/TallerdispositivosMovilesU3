@@ -21,7 +21,12 @@ estado del proyecto
 estructura de navegacion y enrutamiento funcionando
 contenido y datos, pendientes
 
-autor
+para su correcta ejecución, se debe descargar el proyecto completo (carpetas)
+y abrirlo con visual studio code, despues abrir la terminal y ejecutar  ionic serve y se abrirá el navegador con el la siguiente ruta;
+(http://localhost:8100/tabs/portada) se recomienda mozilla firefox con la vista para dispositivos moviles (control+shif+m)
+
+autor![estructura](https://github.com/user-attachments/assets/e47fa5d4-990e-43ae-9bbe-8c0cc282f9a0)
+
 Ricardo Tapia Almendra
 Alumno Carrera
 ingenieria Informatica Multimedia
