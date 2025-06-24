@@ -10,7 +10,7 @@ Esta aplicación móvil fue desarrollada con Ionic + Angular, esta pensada para 
 
 1. **Clonar el repositorio:**
    bash
-   git clone https://github.com/tuusuario/repositorio.git
+   git clone https://github.com/Ricardotp96/TallerdispositivosMovilesU3.git
    cd repositorio, por consola
    
 
@@ -47,7 +47,7 @@ Durante el desarrollo, se abordaron las siguientes tareas:
   
 - **Navegación condicional:** La redirección dependiendo del tipo de usuario logueado a `tab1 (crear)` o `tab2 (tecnico)` según corresponda, fue una lógica clave. Se solucionó usando condiciones en `portada.page.ts`. 
 
-- **Mensajes de error:** Se mejoró el uso de `alert()` añadiendo `ToastController` para notificaciones más profesionales y elegantes.
+- **Mensajes de error:** Se mejoró el diseño del uso de `alert()` añadiendo `ToastController` para notificaciones más profesionales y elegantes.
 
 - **Base de datos** como no se tiene un modelo de datos creado ni configurado, esto genero un problemas validar los datos, por ejemplo de acceso .
 
@@ -60,8 +60,8 @@ Durante el desarrollo, se abordaron las siguientes tareas:
 
 2. **Funciones disponibles:**
    - Acceso con login de usuario correspondiente
-   - Creación de tickets de soporte. con mensjae de creacion de soporte
-   - Visualización de estado e historial (en desarrollo).
+   - Creación de tickets de soporte. con mensjae de creacion de soporte 
+   - Visualización de estado e historial de tickes (en desarrollo).
    - Logout que redirige a la pantalla de portada.
 
 
