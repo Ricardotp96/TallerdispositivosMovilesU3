@@ -1,34 +1,93 @@
-📱 Aplicación: sistema de soporte tecnico
+# 📄 Sistema de Soporte Técnico - README
 
-Este proyecto educacional consiste en el desarrollo de la "cáscara de navegación" de una aplicación móvil utilizando Ionic Framework. La estructura está basada en el mapa de navegación e intentado crear las interfaces diseñadas en la Unidad 2.
-mapa de navegacion
-esta aplicacion contiene la isguiente estructura de navegacion
-inicio (iniciar sesion usuario y ontraseña)
-perfil de usuario (creacion de solictudes, revision e historial)
-perfil administrador (creacion de usuarios, revision de solicitudes, asignacion e historial)
-perfl tecnico (revision de solictudes asignadas, cambios de estado, historial)
-cada una de estas paginas tiene la estructura de rutas propias de Ionic, angular routes, pero solo es la interfaz ya que no contenido funcional
+## 🛠️ Descripción del Proyecto
 
-la estructura del trabajo es la propia que ofrece ionic, usando el codificador de Visual Studio Code, con estrusctura de separacion de roles, rutas, paginas html, css, etc.
-problematicas;
-las pricipales problematicas tiene relacion con la nula experiencia en desarrollo de este tipo de proyectos utilizando el framework Ionic,
-por lo tanto las rutas se configuran en su respectivo archivo, donde deben estar bien definidos los nombres de las paginas para que resulten las rutas
-Diseño responsivo: Para adaptar el diseño a diferentes dispositivos, se utilizó el sistema de ion-grid, ion-row e ion-col. se recomienda utilizar el navegador Mozilla Firefox 
-ya que con el comando control+shif+m se activa el modo responsive de variostipos de dispositivos movles
-Compatibilidad de versiones: Al ejecutar el proyecto, se generaron advertencias por incompatibilidad de versiones de Ionic. Se solucionó actualizando el CLI:
-npm install -g @ionic/cli
-estado del proyecto
-estructura de navegacion y enrutamiento funcionando
-contenido y datos, pendientes
+Esta aplicación móvil fue desarrollada con Ionic + Angular, esta pensada para el departamento de informatica en la cual permite a los usuarios crear solicitudes de soporte técnico y a los técnicos dar el soporte necesario para resolverlas. Se creo para mejorar la eficiencia de dicho Departamento de Informática de la Municipalidad de San Pedro de la Paz.
 
-para su correcta ejecución, se debe descargar el proyecto completo (carpetas)
-y abrirlo con visual studio code, despues abrir la terminal y ejecutar  ionic serve y se abrirá el navegador con el la siguiente ruta;
-(http://localhost:8100/tabs/portada) se recomienda mozilla firefox con la vista para dispositivos moviles (control+shif+m)
 
-autor![estructura](https://github.com/user-attachments/assets/e47fa5d4-990e-43ae-9bbe-8c0cc282f9a0)
 
-Ricardo Tapia Almendra
-Alumno Carrera
-ingenieria Informatica Multimedia
-asignatura 
-Taller de Dispositivos Moviles
+## 🚀 Instalación
+
+1. **Clonar el repositorio:**
+   bash
+   git clone https://github.com/tuusuario/repositorio.git
+   cd repositorio, por consola
+   
+
+2. **Instalar dependencias:**
+
+   npm install, por consola
+   
+
+3. **Ejecutar la aplicación:**
+   
+   ionic serve, por consola
+   
+
+**IMOPRTANTE**
+Se requiere tener instalado Node.js, npm y el CLI de Ionic.
+
+
+
+## 💡 Enfrentando el Desarrollo
+
+Durante el desarrollo, se abordaron las siguientes tareas:
+
+- Crear formularios de login y creación de tickets con validaciones.
+- Manejo del usuario logueado mediante `localStorage`.
+- Navegación entre páginas usando rutas y condiciones de usuario.
+- Uso de `ToastController` para feedback (mensajes) al usuario.
+- Diseño responsive con Ionic UI y clases personalizadas.
+
+
+
+## ⚠️ Problemas Enfrentados
+
+- **Persistencia del usuario:** Al principio no se mostraba correctamente el nombre del usuario logueado en las pestañas. Se resolvió guardando el nombre en `localStorage` y recuperándolo con `ngOnInit()`.
+  
+- **Navegación condicional:** La redirección dependiendo del tipo de usuario logueado a `tab1 (crear)` o `tab2 (tecnico)` según corresponda, fue una lógica clave. Se solucionó usando condiciones en `portada.page.ts`. 
+
+- **Mensajes de error:** Se mejoró el uso de `alert()` añadiendo `ToastController` para notificaciones más profesionales y elegantes.
+
+- **Base de datos** como no se tiene un modelo de datos creado ni configurado, esto genero un problemas validar los datos, por ejemplo de acceso .
+
+
+## ▶️ Cómo Usar la Aplicación
+
+1. **Inicio de sesión:**
+   - Usuario: `rtapia`, Clave: `12345` (accede a Técnico), se muestra ariba en la iterfaz al costado del logo
+   - Usuario: `lgardel`, Clave: `gardel` (accede a Usuario), se muestra ariba en la iterfaz al costado del logo
+
+2. **Funciones disponibles:**
+   - Acceso con login de usuario correspondiente
+   - Creación de tickets de soporte. con mensjae de creacion de soporte
+   - Visualización de estado e historial (en desarrollo).
+   - Logout que redirige a la pantalla de portada.
+
+
+
+## 👨‍💻 Tecnologías Usadas
+
+- Ionic Framework
+- Angular
+- TypeScript
+- HTML/CSS
+- LocalStorage
+
+
+
+## 📂 Estructura del Proyecto 
+
+
+src/
+├── app/
+│   ├── portada/
+│   ├── tabs1
+│   ├── tabs2
+│   ├── tabs3
+│   ├── tabs
+│   └── explore-container/
+├── assets/
+    └── imgs/
+
+

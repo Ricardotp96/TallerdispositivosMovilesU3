@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="portada-bg">  <!-- Aquí va el fondo degradado -->
-
+  <div class="portada-bg">
     <div class="portada-container">
+
       <!-- Logo -->
       <div class="logo-container">
         <img src="assets/imgs/fondo1.png" alt="Logo Municipalidad San Pedro de la Paz" />
@@ -19,7 +19,7 @@
         <ion-input
           placeholder="USUARIO"
           type="text"
-          
+          [(ngModel)]="usuario"
           autocomplete="username"
           required
           aria-label="Usuario"
@@ -31,8 +31,8 @@
         <ion-icon name="key" slot="start" class="icono-input"></ion-icon>
         <ion-input
           placeholder="PASSWORD"
-          
-          
+          type="password"
+          [(ngModel)]="password"
           autocomplete="current-password"
           required
           aria-label="Contraseña"
@@ -45,8 +45,7 @@
         color="primary"
         shape="round"
         class="boton-login"
-        
-        
+        (click)="iniciarSesion()"
       >
         INICIAR SESIÓN
       </ion-button>
@@ -60,7 +59,7 @@
       <div class="footer-text">
         Departamento de Informática.
       </div>
-    </div>
 
+    </div>
   </div>
 </ion-content>

@@ -1,10 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Resolucion
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
@@ -25,7 +19,7 @@
       </div>
       <div class="info-text">
         <div>*** Tecnico ***</div>
-        <div>Rtapia</div>
+        <div>{{ usuarioLogueado }}</div>
         <div>Depto. Informatica</div>
       </div>
     </div>
@@ -103,6 +97,7 @@
       <div class="botones-container">
         <ion-button expand="block" color="danger">Cancelar</ion-button>
         <ion-button expand="block" color="primary">Guardar</ion-button>
+        
       </div>
       
       
@@ -110,17 +105,10 @@
 
     
 
-   <!-- <ion-card>
-      <ion-card-header>
-        <ion-card-title>Título de la Tarjeta</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        Contenido de prueba dentro de una tarjeta.
-      </ion-card-content>
-    </ion-card> -->
-
-    <!-- Componente existente 
-    <app-explore-container name="prueba 1"></app-explore-container> -->
   </div>
+  <!-- Botón Salir -->
+<ion-button expand="block" color="danger" (click)="logout()">
+  Salir
+</ion-button>
 
 </ion-content>

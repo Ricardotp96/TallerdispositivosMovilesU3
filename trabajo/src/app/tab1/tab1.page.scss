@@ -88,3 +88,224 @@ ion-item.input-verde {
     color: black !important; /* placeholder en negro */
   }
   
+  // ✅ Estilos para la pestaña Estado
+.estadisticas-container {
+  margin: 16px 0;
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 12px;
+      
+      ion-icon {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      
+      .stat-number {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--ion-color-primary);
+      }
+      
+      .stat-label {
+        font-size: 12px;
+        color: var(--ion-color-medium);
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+// ✅ Estilos para la pestaña Historial
+.filtros-container {
+  margin-bottom: 16px;
+  
+  ion-item {
+    margin-bottom: 8px;
+  }
+}
+
+.solicitudes-container {
+  .mensaje-vacio {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--ion-color-medium);
+    
+    ion-icon {
+      margin-bottom: 16px;
+    }
+    
+    p {
+      margin: 16px 0;
+      font-size: 16px;
+    }
+  }
+  
+  .solicitud-card {
+    margin-bottom: 16px;
+    
+    .card-header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+      ion-card-title {
+        flex: 1;
+        margin-right: 12px;
+      }
+      
+      ion-chip {
+        flex-shrink: 0;
+      }
+    }
+    
+    ion-card-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      
+      .id-solicitud {
+        margin-left: auto;
+        font-size: 10px;
+        background: var(--ion-color-light);
+        padding: 2px 6px;
+        border-radius: 4px;
+        color: var(--ion-color-medium);
+      }
+    }
+    
+    .solicitud-detalles {
+      margin-bottom: 16px;
+      
+      .detalle-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        
+        ion-icon {
+          color: var(--ion-color-medium);
+          flex-shrink: 0;
+        }
+        
+        span {
+          word-break: break-word;
+        }
+      }
+    }
+    
+    .solicitud-texto {
+      background: var(--ion-color-light);
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      
+      strong {
+        color: var(--ion-color-primary);
+        display: block;
+        margin-bottom: 8px;
+      }
+      
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+        white-space: pre-wrap;
+      }
+    }
+    
+    .acciones-solicitud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      
+      ion-button {
+        flex: 1;
+        min-width: 100px;
+        
+        @media (max-width: 480px) {
+          flex: 1 1 calc(50% - 4px);
+          min-width: auto;
+        }
+      }
+    }
+  }
+}
+
+// ✅ Estilos responsive
+@media (max-width: 768px) {
+  .estadisticas-container .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    
+    .stat-item {
+      padding: 8px;
+      
+      ion-icon {
+        font-size: 20px;
+      }
+      
+      .stat-number {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .solicitudes-container .solicitud-card {
+    .card-header-flex {
+      flex-direction: column;
+      align-items: flex-start;
+      
+      ion-card-title {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+    
+    ion-card-subtitle {
+      flex-wrap: wrap;
+      
+      .id-solicitud {
+        margin-left: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+// ✅ Estilos adicionales para mejorar la apariencia
+.portada-container {
+  .titulo-crear {
+    color: var(--ion-color-primary);
+    margin-bottom: 20px;
+  }
+}
+
+.input-verde {
+  --background: rgba(var(--ion-color-success-rgb), 0.1);
+  --border-color: var(--ion-color-success);
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.botones-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  
+  ion-button {
+    flex: 1;
+  }
+}

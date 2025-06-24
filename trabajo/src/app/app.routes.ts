@@ -9,4 +9,8 @@ export const routes: Routes = [
     path: 'portada',
     loadComponent: () => import('./portada/portada.page').then( m => m.PortadaPage)
   },
+  {
+    path: 'historial',
+    loadComponent: () => import('./historial/historial.page').then( m => m.HistorialPage)
+  },
 ];
